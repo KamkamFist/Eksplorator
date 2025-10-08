@@ -1,15 +1,11 @@
 import FileItem from "./FileItem";
 import FolderItem from "./FolderItem";
+import FileTree from "./FileTree.jsx";
 
-function FileExplorer() {
+function FileExplorer({fileSystem}) {
     return(
         <>
-        <FileItem />
-        <FolderItem />
-        <FileItem />
-        <FileItem />
-        <FileItem />
-        <FolderItem />
+        <FileTree fileSystem={fileSystem} />
         </>
     )
 }

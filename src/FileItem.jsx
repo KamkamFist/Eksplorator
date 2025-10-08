@@ -1,11 +1,12 @@
 import './FileItem.css'
 
-function FileItem() {
+function FileItem({ name, type, size, sizeUnit }) {
 return(
     <div className="item">
-        <p>Nazwa pliku</p>
-        <p>Plik tekstowy</p>
-        <p>1024mb</p>
+        <p>{name}</p>
+        <p>{type}</p>
+        <p>{size}</p>
+        <p>{sizeUnit}</p>
     </div>
 )
 }
