@@ -1,3 +1,5 @@
+import './FileItem.css'
+
 function FileItem() {
 return(
     <div className="item">
